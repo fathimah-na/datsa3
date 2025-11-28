@@ -7,9 +7,9 @@ import pickle
 try:
     with open('hist_gradient_regression_model.pkl', 'rb') as file:
         model = pickle.load(file)
-    with open('power_transformer.pkl', 'rb') as file:
+    with open('power_transformer (2).pkl', 'rb') as file:
         pt = pickle.load(file)
-    with open('standard_scaler.pkl', 'rb') as file:
+    with open('standard_scaler (2).pkl', 'rb') as file:
         scaler = pickle.load(file)
 except FileNotFoundError:
     st.error("File model atau transformer tidak ditemukan. Pastikan semua file .pkl berada dalam folder yang sama dengan app.py.")
